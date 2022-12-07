@@ -10,20 +10,22 @@
 		5AEF1FE62941009F009EDED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF1FE52941009F009EDED0 /* AppDelegate.swift */; };
 		5AEF1FE82941009F009EDED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF1FE72941009F009EDED0 /* SceneDelegate.swift */; };
 		5AEF1FEA2941009F009EDED0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF1FE92941009F009EDED0 /* ViewController.swift */; };
-		5AEF1FED2941009F009EDED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEF1FEB2941009F009EDED0 /* Main.storyboard */; };
 		5AEF1FEF294100A0009EDED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AEF1FEE294100A0009EDED0 /* Assets.xcassets */; };
 		5AEF1FF2294100A0009EDED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEF1FF0294100A0009EDED0 /* LaunchScreen.storyboard */; };
+		BD4407AC3930CEB4A575230B /* Pods_ClevertecTraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D10EB6F1CEDAD4910F71B53E /* Pods_ClevertecTraining.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34D22CC59B0193BC71D6B7EE /* Pods-ClevertecTraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClevertecTraining.release.xcconfig"; path = "Target Support Files/Pods-ClevertecTraining/Pods-ClevertecTraining.release.xcconfig"; sourceTree = "<group>"; };
+		3ADB9F9FB65FBE00182B9C27 /* Pods-ClevertecTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClevertecTraining.debug.xcconfig"; path = "Target Support Files/Pods-ClevertecTraining/Pods-ClevertecTraining.debug.xcconfig"; sourceTree = "<group>"; };
 		5AEF1FE22941009F009EDED0 /* ClevertecTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClevertecTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEF1FE52941009F009EDED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AEF1FE72941009F009EDED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5AEF1FE92941009F009EDED0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5AEF1FEC2941009F009EDED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AEF1FEE294100A0009EDED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AEF1FF1294100A0009EDED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AEF1FF3294100A0009EDED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10EB6F1CEDAD4910F71B53E /* Pods_ClevertecTraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClevertecTraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4407AC3930CEB4A575230B /* Pods_ClevertecTraining.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B8DCD95403C7B8D9399759C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3ADB9F9FB65FBE00182B9C27 /* Pods-ClevertecTraining.debug.xcconfig */,
+				34D22CC59B0193BC71D6B7EE /* Pods-ClevertecTraining.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5AEF1FD92941009F009EDED0 = {
 			isa = PBXGroup;
 			children = (
 				5AEF1FE42941009F009EDED0 /* ClevertecTraining */,
 				5AEF1FE32941009F009EDED0 /* Products */,
+				4B8DCD95403C7B8D9399759C /* Pods */,
+				F0D56DF0AF83A716AFFF654A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +74,19 @@
 				5AEF1FE52941009F009EDED0 /* AppDelegate.swift */,
 				5AEF1FE72941009F009EDED0 /* SceneDelegate.swift */,
 				5AEF1FE92941009F009EDED0 /* ViewController.swift */,
-				5AEF1FEB2941009F009EDED0 /* Main.storyboard */,
 				5AEF1FEE294100A0009EDED0 /* Assets.xcassets */,
 				5AEF1FF0294100A0009EDED0 /* LaunchScreen.storyboard */,
 				5AEF1FF3294100A0009EDED0 /* Info.plist */,
 			);
 			path = ClevertecTraining;
+			sourceTree = "<group>";
+		};
+		F0D56DF0AF83A716AFFF654A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D10EB6F1CEDAD4910F71B53E /* Pods_ClevertecTraining.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AEF1FF6294100A0009EDED0 /* Build configuration list for PBXNativeTarget "ClevertecTraining" */;
 			buildPhases = (
+				ED11D8209FADC394B733A80A /* [CP] Check Pods Manifest.lock */,
 				5AEF1FDE2941009F009EDED0 /* Sources */,
 				5AEF1FDF2941009F009EDED0 /* Frameworks */,
 				5AEF1FE02941009F009EDED0 /* Resources */,
+				EC0A9496244A90733CB8CF78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +151,52 @@
 			files = (
 				5AEF1FF2294100A0009EDED0 /* LaunchScreen.storyboard in Resources */,
 				5AEF1FEF294100A0009EDED0 /* Assets.xcassets in Resources */,
-				5AEF1FED2941009F009EDED0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC0A9496244A90733CB8CF78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClevertecTraining/Pods-ClevertecTraining-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClevertecTraining/Pods-ClevertecTraining-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClevertecTraining/Pods-ClevertecTraining-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED11D8209FADC394B733A80A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClevertecTraining-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5AEF1FDE2941009F009EDED0 /* Sources */ = {
@@ -147,14 +212,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5AEF1FEB2941009F009EDED0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5AEF1FEC2941009F009EDED0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5AEF1FF0294100A0009EDED0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +339,7 @@
 		};
 		5AEF1FF7294100A0009EDED0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ADB9F9FB65FBE00182B9C27 /* Pods-ClevertecTraining.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +350,6 @@
 				INFOPLIST_FILE = ClevertecTraining/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +367,7 @@
 		};
 		5AEF1FF8294100A0009EDED0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D22CC59B0193BC71D6B7EE /* Pods-ClevertecTraining.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +378,6 @@
 				INFOPLIST_FILE = ClevertecTraining/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
