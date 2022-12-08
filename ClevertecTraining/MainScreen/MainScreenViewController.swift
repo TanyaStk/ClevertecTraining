@@ -162,7 +162,7 @@ class MainScreenViewController: UIViewController {
     }
 }
 
-extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+extension MainScreenViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
