@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A2CB3CF2941E1FC004843FF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2CB3CE2941E1FC004843FF /* Colors.xcassets */; };
 		5ABF1192294124E800C6A815 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF1191294124E800C6A815 /* Constants.swift */; };
 		5ABF11952941330B00C6A815 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF11972941330B00C6A815 /* Localizable.strings */; };
 		5ABF119D29413A1400C6A815 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF119C29413A1400C6A815 /* StringExtension.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		34D22CC59B0193BC71D6B7EE /* Pods-ClevertecTraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClevertecTraining.release.xcconfig"; path = "Target Support Files/Pods-ClevertecTraining/Pods-ClevertecTraining.release.xcconfig"; sourceTree = "<group>"; };
 		3ADB9F9FB65FBE00182B9C27 /* Pods-ClevertecTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClevertecTraining.debug.xcconfig"; path = "Target Support Files/Pods-ClevertecTraining/Pods-ClevertecTraining.debug.xcconfig"; sourceTree = "<group>"; };
+		5A2CB3CE2941E1FC004843FF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		5ABF1191294124E800C6A815 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5ABF11962941330B00C6A815 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5ABF11982941339700C6A815 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				5AEF1FE92941009F009EDED0 /* ViewController.swift */,
 				5ABF119C29413A1400C6A815 /* StringExtension.swift */,
 				5AEF1FEE294100A0009EDED0 /* Assets.xcassets */,
+				5A2CB3CE2941E1FC004843FF /* Colors.xcassets */,
 				5AEF1FF0294100A0009EDED0 /* LaunchScreen.storyboard */,
 				5AEF1FF3294100A0009EDED0 /* Info.plist */,
 				5ABF1191294124E800C6A815 /* Constants.swift */,
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AEF1FF2294100A0009EDED0 /* LaunchScreen.storyboard in Resources */,
+				5A2CB3CF2941E1FC004843FF /* Colors.xcassets in Resources */,
 				5ABF11952941330B00C6A815 /* Localizable.strings in Resources */,
 				5AEF1FEF294100A0009EDED0 /* Assets.xcassets in Resources */,
 			);
