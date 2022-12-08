@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ABF1192294124E800C6A815 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF1191294124E800C6A815 /* Constants.swift */; };
+		5ABF11952941330B00C6A815 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF11972941330B00C6A815 /* Localizable.strings */; };
+		5ABF119D29413A1400C6A815 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF119C29413A1400C6A815 /* StringExtension.swift */; };
 		5AEF1FE62941009F009EDED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF1FE52941009F009EDED0 /* AppDelegate.swift */; };
 		5AEF1FE82941009F009EDED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF1FE72941009F009EDED0 /* SceneDelegate.swift */; };
 		5AEF1FEA2941009F009EDED0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF1FE92941009F009EDED0 /* ViewController.swift */; };
@@ -18,6 +21,13 @@
 /* Begin PBXFileReference section */
 		34D22CC59B0193BC71D6B7EE /* Pods-ClevertecTraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClevertecTraining.release.xcconfig"; path = "Target Support Files/Pods-ClevertecTraining/Pods-ClevertecTraining.release.xcconfig"; sourceTree = "<group>"; };
 		3ADB9F9FB65FBE00182B9C27 /* Pods-ClevertecTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClevertecTraining.debug.xcconfig"; path = "Target Support Files/Pods-ClevertecTraining/Pods-ClevertecTraining.debug.xcconfig"; sourceTree = "<group>"; };
+		5ABF1191294124E800C6A815 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5ABF11962941330B00C6A815 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5ABF11982941339700C6A815 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5ABF11992941339700C6A815 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5ABF119A294133B800C6A815 /* be-BY */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "be-BY"; path = "be-BY.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		5ABF119B294133B800C6A815 /* be-BY */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "be-BY"; path = "be-BY.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5ABF119C29413A1400C6A815 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		5AEF1FE22941009F009EDED0 /* ClevertecTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClevertecTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEF1FE52941009F009EDED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AEF1FE72941009F009EDED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +56,6 @@
 				3ADB9F9FB65FBE00182B9C27 /* Pods-ClevertecTraining.debug.xcconfig */,
 				34D22CC59B0193BC71D6B7EE /* Pods-ClevertecTraining.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -74,9 +83,12 @@
 				5AEF1FE52941009F009EDED0 /* AppDelegate.swift */,
 				5AEF1FE72941009F009EDED0 /* SceneDelegate.swift */,
 				5AEF1FE92941009F009EDED0 /* ViewController.swift */,
+				5ABF119C29413A1400C6A815 /* StringExtension.swift */,
 				5AEF1FEE294100A0009EDED0 /* Assets.xcassets */,
 				5AEF1FF0294100A0009EDED0 /* LaunchScreen.storyboard */,
 				5AEF1FF3294100A0009EDED0 /* Info.plist */,
+				5ABF1191294124E800C6A815 /* Constants.swift */,
+				5ABF11972941330B00C6A815 /* Localizable.strings */,
 			);
 			path = ClevertecTraining;
 			sourceTree = "<group>";
@@ -133,6 +145,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				"be-BY",
 			);
 			mainGroup = 5AEF1FD92941009F009EDED0;
 			productRefGroup = 5AEF1FE32941009F009EDED0 /* Products */;
@@ -150,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AEF1FF2294100A0009EDED0 /* LaunchScreen.storyboard in Resources */,
+				5ABF11952941330B00C6A815 /* Localizable.strings in Resources */,
 				5AEF1FEF294100A0009EDED0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,17 +220,31 @@
 			files = (
 				5AEF1FEA2941009F009EDED0 /* ViewController.swift in Sources */,
 				5AEF1FE62941009F009EDED0 /* AppDelegate.swift in Sources */,
+				5ABF119D29413A1400C6A815 /* StringExtension.swift in Sources */,
 				5AEF1FE82941009F009EDED0 /* SceneDelegate.swift in Sources */,
+				5ABF1192294124E800C6A815 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		5ABF11972941330B00C6A815 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ABF11962941330B00C6A815 /* en */,
+				5ABF11992941339700C6A815 /* ru */,
+				5ABF119B294133B800C6A815 /* be-BY */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		5AEF1FF0294100A0009EDED0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5AEF1FF1294100A0009EDED0 /* Base */,
+				5ABF11982941339700C6A815 /* ru */,
+				5ABF119A294133B800C6A815 /* be-BY */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -227,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -287,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

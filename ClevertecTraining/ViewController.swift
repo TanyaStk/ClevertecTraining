@@ -10,6 +10,12 @@ import SnapKit
 
 class ViewController: UIViewController {
     
+    private let languages = [(lang: "English", code: "en"),
+                             (lang: "Russian", code: "ru"),
+                             (lang: "Belarusian", code: "be-BY")]
+    
+    private lazy var selectedLanguage = languages[0]
+    
     private let logoImageView: UIImageView = {
         let image = UIImage(named: "LogoIcon")?.withRenderingMode(.alwaysTemplate)
         let imageView = UIImageView(image: image)
@@ -19,7 +25,7 @@ class ViewController: UIViewController {
     
     private let greetingTextView: UITextView = {
         let textView = UITextView()
-        textView.text = "Hello Everyone!"
+        textView.text = "Hello!"
         textView.font = UIFont.preferredFont(forTextStyle: .largeTitle)
         textView.textColor = .black
         textView.textAlignment = .center
@@ -35,14 +41,14 @@ class ViewController: UIViewController {
     
     private let lightModeButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Light Mode", for: .normal)
+        button.setTitle("Light", for: .normal)
         button.backgroundColor = .purple
         return button
     }()
     
     private let darkModeButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Dark Mode", for: .normal)
+        button.setTitle("Dark", for: .normal)
         button.backgroundColor = .purple
         return button
     }()
@@ -112,6 +118,14 @@ class ViewController: UIViewController {
             make.centerX.equalToSuperview()
         }
     }
+    
+    private func changeLanguage(lang: String) {
+        greetingTextView.text = "Hello!".localized(lang)
+        lightModeButton.setTitle("Light".localized(lang), for: .normal)
+        darkModeButton.setTitle("Dark".localized(lang), for: .normal)
+        defaultModeButton.setTitle("Default".localized(lang), for: .normal)
+        languagePicker.reloadAllComponents()
+    }
 }
 
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -120,7 +134,15 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 3
+        return languages.count
     }
     
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return languages[row].lang.localized(selectedLanguage.code)
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        changeLanguage(lang: languages[row].code)
+        selectedLanguage = languages[row]
+    }
 }
