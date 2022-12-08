@@ -13,7 +13,7 @@
 		5ABF119D29413A1400C6A815 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF119C29413A1400C6A815 /* StringExtension.swift */; };
 		5AEF1FE62941009F009EDED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF1FE52941009F009EDED0 /* AppDelegate.swift */; };
 		5AEF1FE82941009F009EDED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF1FE72941009F009EDED0 /* SceneDelegate.swift */; };
-		5AEF1FEA2941009F009EDED0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF1FE92941009F009EDED0 /* ViewController.swift */; };
+		5AEF1FEA2941009F009EDED0 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF1FE92941009F009EDED0 /* MainScreenViewController.swift */; };
 		5AEF1FEF294100A0009EDED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AEF1FEE294100A0009EDED0 /* Assets.xcassets */; };
 		5AEF1FF2294100A0009EDED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEF1FF0294100A0009EDED0 /* LaunchScreen.storyboard */; };
 		BD4407AC3930CEB4A575230B /* Pods_ClevertecTraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D10EB6F1CEDAD4910F71B53E /* Pods_ClevertecTraining.framework */; };
@@ -33,7 +33,7 @@
 		5AEF1FE22941009F009EDED0 /* ClevertecTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClevertecTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEF1FE52941009F009EDED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AEF1FE72941009F009EDED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5AEF1FE92941009F009EDED0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5AEF1FE92941009F009EDED0 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		5AEF1FEE294100A0009EDED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AEF1FF1294100A0009EDED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AEF1FF3294100A0009EDED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +61,50 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5A2CB3D02941F0CC004843FF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5AEF1FE52941009F009EDED0 /* AppDelegate.swift */,
+				5AEF1FE72941009F009EDED0 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5A2CB3D12941F0E7004843FF /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5AEF1FE92941009F009EDED0 /* MainScreenViewController.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		5A2CB3D22941F1B8004843FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AEF1FF0294100A0009EDED0 /* LaunchScreen.storyboard */,
+				5AEF1FEE294100A0009EDED0 /* Assets.xcassets */,
+				5A2CB3CE2941E1FC004843FF /* Colors.xcassets */,
+				5ABF11972941330B00C6A815 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A2CB3D32941F426004843FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5ABF119C29413A1400C6A815 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5A2CB3D42941F51E004843FF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5ABF1191294124E800C6A815 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		5AEF1FD92941009F009EDED0 = {
 			isa = PBXGroup;
 			children = (
@@ -82,16 +126,12 @@
 		5AEF1FE42941009F009EDED0 /* ClevertecTraining */ = {
 			isa = PBXGroup;
 			children = (
-				5AEF1FE52941009F009EDED0 /* AppDelegate.swift */,
-				5AEF1FE72941009F009EDED0 /* SceneDelegate.swift */,
-				5AEF1FE92941009F009EDED0 /* ViewController.swift */,
-				5ABF119C29413A1400C6A815 /* StringExtension.swift */,
-				5AEF1FEE294100A0009EDED0 /* Assets.xcassets */,
-				5A2CB3CE2941E1FC004843FF /* Colors.xcassets */,
-				5AEF1FF0294100A0009EDED0 /* LaunchScreen.storyboard */,
+				5A2CB3D42941F51E004843FF /* Constants */,
+				5A2CB3D32941F426004843FF /* Extensions */,
+				5A2CB3D22941F1B8004843FF /* Resources */,
+				5A2CB3D12941F0E7004843FF /* MainScreen */,
+				5A2CB3D02941F0CC004843FF /* Core */,
 				5AEF1FF3294100A0009EDED0 /* Info.plist */,
-				5ABF1191294124E800C6A815 /* Constants.swift */,
-				5ABF11972941330B00C6A815 /* Localizable.strings */,
 			);
 			path = ClevertecTraining;
 			sourceTree = "<group>";
@@ -222,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AEF1FEA2941009F009EDED0 /* ViewController.swift in Sources */,
+				5AEF1FEA2941009F009EDED0 /* MainScreenViewController.swift in Sources */,
 				5AEF1FE62941009F009EDED0 /* AppDelegate.swift in Sources */,
 				5ABF119D29413A1400C6A815 /* StringExtension.swift in Sources */,
 				5AEF1FE82941009F009EDED0 /* SceneDelegate.swift in Sources */,
@@ -377,7 +417,6 @@
 			baseConfigurationReference = 3ADB9F9FB65FBE00182B9C27 /* Pods-ClevertecTraining.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RAR2BY5DT6;
@@ -405,7 +444,6 @@
 			baseConfigurationReference = 34D22CC59B0193BC71D6B7EE /* Pods-ClevertecTraining.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RAR2BY5DT6;

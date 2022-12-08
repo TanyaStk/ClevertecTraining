@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+class MainScreenViewController: UIViewController {
     
     private let languages = [(lang: "English", code: "en"),
                              (lang: "Russian", code: "ru"),
