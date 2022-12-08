@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     private let logoImageView: UIImageView = {
         let image = UIImage(named: "LogoIcon")?.withRenderingMode(.alwaysTemplate)
         let imageView = UIImageView(image: image)
-        imageView.tintColor = .systemPink
+        imageView.tintColor = UIColor(named: "UIElementsColor")
         return imageView
     }()
     
@@ -27,45 +27,66 @@ class ViewController: UIViewController {
         let textView = UITextView()
         textView.text = "Hello!"
         textView.font = UIFont.preferredFont(forTextStyle: .largeTitle)
-        textView.textColor = .black
+        textView.textColor = UIColor(named: "TextColor")
         textView.textAlignment = .center
-        textView.backgroundColor = .purple
+        textView.backgroundColor = UIColor(named: "UIElementsColor")
+        textView.clipsToBounds = true
+        textView.layer.cornerRadius = Constants.cornerRadius
         return textView
     }()
     
     private let languagePicker: UIPickerView = {
         let pickerView = UIPickerView()
-        pickerView.backgroundColor = .cyan
+        pickerView.tintColor = UIColor(named: "TextColor")
+        pickerView.setValue(UIColor(named: "UIElementsColor"), forKey: "textColor")
         return pickerView
     }()
     
     private let lightModeButton: UIButton = {
         let button = UIButton()
         button.setTitle("Light", for: .normal)
-        button.backgroundColor = .purple
+        button.setTitleColor(UIColor(named: "TextColor"), for: .normal)
+        button.backgroundColor = UIColor(named: "UIElementsColor")
+        button.clipsToBounds = true
+        button.layer.cornerRadius = Constants.cornerRadius
+        button.addTarget(self,
+                         action: #selector(setLightMode),
+                         for: .touchUpInside)
         return button
     }()
     
     private let darkModeButton: UIButton = {
         let button = UIButton()
         button.setTitle("Dark", for: .normal)
-        button.backgroundColor = .purple
+        button.setTitleColor(UIColor(named: "TextColor"), for: .normal)
+        button.backgroundColor = UIColor(named: "UIElementsColor")
+        button.clipsToBounds = true
+        button.layer.cornerRadius = Constants.cornerRadius
+        button.addTarget(self,
+                         action: #selector(setDarkMode),
+                         for: .touchUpInside)
         return button
     }()
 
     private let defaultModeButton: UIButton = {
         let button = UIButton()
         button.setTitle("Default", for: .normal)
-        button.backgroundColor = .purple
+        button.setTitleColor(UIColor(named: "TextColor"), for: .normal)
+        button.backgroundColor = UIColor(named: "UIElementsColor")
+        button.clipsToBounds = true
+        button.layer.cornerRadius = Constants.cornerRadius
+        button.addTarget(self,
+                         action: #selector(setDefaultMode),
+                         for: .touchUpInside)
         return button
     }()
     
     private lazy var buttonsStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
-        stackView.alignment = .trailing
+        stackView.alignment = .fill
         stackView.distribution = .fillEqually
-        stackView.spacing = 8
+        stackView.spacing = CGFloat(Constants.offset)
         [self.lightModeButton,
          self.darkModeButton,
          self.defaultModeButton].forEach { stackView.addArrangedSubview($0) }
@@ -75,12 +96,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        languagePicker.delegate = self
-        languagePicker.dataSource = self
+        view.backgroundColor = UIColor(named: "BackgroundColor")
         
-        view.backgroundColor = .white
         addSubviews()
         setConstraints()
+        
+        languagePicker.delegate = self
+        languagePicker.dataSource = self
     }
     
     private func addSubviews() {
@@ -125,6 +147,18 @@ class ViewController: UIViewController {
         darkModeButton.setTitle("Dark".localized(lang), for: .normal)
         defaultModeButton.setTitle("Default".localized(lang), for: .normal)
         languagePicker.reloadAllComponents()
+    }
+    
+    @objc func setLightMode() {
+        overrideUserInterfaceStyle = .light
+    }
+    
+    @objc func setDarkMode() {
+        overrideUserInterfaceStyle = .dark
+    }
+    
+    @objc func setDefaultMode() {
+        overrideUserInterfaceStyle = .unspecified
     }
 }
 
